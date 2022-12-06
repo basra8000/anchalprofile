@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchal Basra Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="firstSection">
+        <img src="anchal.jpeg" alt="My image">
+        <h1>Anchal Basra</h1>
+        <p>Full Stack Web Developer</p>
+        <div class="links">
+            <a id="resumeLink" href="Resume_Aanchal.pdf" download><i class="fa-solid fa-download"></i> Resume </a>
+            <a id="contactLink" href="#contactMe"> Contact Me</a>
+        </div>
+    </section>
+
+    <section id="infographic">
+        <div class="infoDiv">
+            <div class="honesty">
+                <h2>About Me and Academic Honesty</h2>
+                <p>
+                    I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. 
+                    No part of this assessment has been copied manually or electronically from any other source 
+                    (including web sites) except for the information supplied by the WEB222 instructors and / or made available 
+                    in this assessment for my use. I also declare that no part of this assignment has been distributed to other 
+                    students.
+                </p>
+                <p><strong>Date: </strong> Dec 06, 2022</p>
+    
+            </div>
+            <div class="basicInfo">
+                <h2>Basic Information</h2>
+                <div id="info">
+                    <div class="myTitles">
+                        <p>NAME: </p>
+                        <p>AGE: </p>
+                        <p>EMAIL: </p>
+                        <p>LANGUAGE: </p>
+                        <p>CLASS SECTION: </p>
+                        <p>STUDENT ID: </p>
+                        <p>INSRTUCTOR: </p>
+                    </div>
+                    <div class="myDetails">
+                        <p>Aanchal Basra</p>
+                        <p>20</p>
+                        <p>aanchalbasra07@gmail.com</p>
+                        <p>English, Punjabi, Hindi</p>
+                        <p>ZAA</p>
+                        <p>156175200</p>
+                        <p>Muath Alzghool</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="educationSec">
+        <h1>Education</h1>
+        <div class="eduDiv">
+            <div class="leftSide">
+                <p>2018 - 2020</p>
+                <h2>High School</h2>
+            </div>
+            <div class="rightSide">
+                <h2>High School</h2>
+                <p><strong>M D Dayanand Model School, Nakodar, Punjab , India</strong></p>
+                <p>Under the supervision of <span>Dr. Awesome.</span></p>
+                <p>Awarded with all schlarships in the world.</p>
+            </div>
+        </div>
+        <div class="eduDiv">
+            <div class="leftSide">
+                <p>Pursuing</p>
+                <h2>Bachelor's Degree</h2>
+            </div>
+            <div class="rightSide">
+                <h2>Bachelor's Degree</h2>
+                <p><strong>Seneca College</strong></p>
+                <p>Under the supervision of <span>Dr. Awesome.</span></p>
+                <p>Awarded with all schlarships in the world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skillsDiv">
+            <h2>My favourite programming languages and technologies</h2>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Php</p>
+            <p>Mysql</p>
+        </div>
+    </section>
+
+
+    <section id="contactMe">
+        <h2>Contact Me</h2>
+        <form action="https://httpbin.org/post" method="post">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName" required><br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="streetAddress">Street Address:</label>
+            <input type="text" id="streetAddress" name="streetAddress" required><br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+            <label for="province">Province:</label>
+            <input list="province" name="province" id="province">
+            <datalist id="province">
+                <option value="Toronto">
+                <option value="Vancouver">
+                <option value="Montreal">
+                <option value="Victoria">
+                <option value="Calgary">
+            </datalist> <br><br>
+
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" placeholder="44240 | 44240-5555 | T2P 3C7" id="postalCode" name="postalCode" pattern="^((\d{5}-\d{4})|(\d{5})|([A-Z]\d[A-Z]\s\d[A-Z]\d))$" ><br><br>
+
+            <input class="radioInputs" type="radio" id="jobOffer" name="whatabout" value="jobOffer"  required>
+            <label for="jobOffer">Job offer</label>
+
+            <input class="radioInputs" type="radio" id="school" name="whatabout" value="school"  required>
+            <label for="school">School</label>
+
+            <input class="radioInputs" type="radio" id="other" name="whatabout" value="other"  required>
+            <label for="other">Other</label>
+    
+            <div id="inputBox"><br>
+                <label class="boxinput" for="topic">Enter Topic: </label>
+                <input type="text" name="topic" id="topic">
+            </div><br><br>
+
+            <textarea placeholder="Entre Message here" cols="30" rows="5" required></textarea>
+            <br><br>
+
+            <input id="submitButton" type="submit" value="Submit Form">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
