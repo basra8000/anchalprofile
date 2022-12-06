@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* styles for the first section with image and name */
+#firstSection{
+    height: 100vh;
+    background-color:rgb(123, 77, 163);
+    text-align: center;
+    color: white;
+}
+
+#firstSection img{
+    border-radius: 10px;
+    margin-top: 70px;
+    height: 400px;
+}
+
+#firstSection h1{
+    font-family: 'Zen Dots', cursive;
+    font-size:xx-large;
+}
+
+.links{
+    margin-top: 50px;
+}
+
+#firstSection  a{
+    padding: 15px 30px;
+    border-radius: 30px;    
+}
+
+#resumeLink{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+#contactLink{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding-bottom: 50px;
+}
+
+
+/* infographic section styles */
+#infographic{
+    background-color: aquamarine;
+    padding: 100px;
+}
+.infoDiv, #info{
+    display: flex;
+}
+.infoDiv{
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.honesty, .basicInfo{
+    width: 40%;
+}
+
+.honesty{
+    padding-right: 20px;
+}
+
+.basicInfo{
+    padding-left: 50px;
+}
+
+.myTitles{
+    font-weight: bold;
+    width: 50%;
+}
+
+.myDetails{
+    width: 50%;
+}
+
+
+/* education section */
+#educationSec{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.eduDiv{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+}
+
+.leftSide{
+    width: 30%;
+    background-color: rgb(123, 77, 163);
+    color: white;
+    padding-top: 30px;
+}
+.rightSide{
+    width: 70%;
+    padding-left: 10%;
+    text-align: left;
+}
+
+.rightSide span{
+    color:rgb(0, 201, 205);
+}
+
+
+/* skills section */
+#skills{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 100px;
+}
+
+.skillsDiv{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 50px;
+    text-align: left;
+}
+
+
+
+/* contact me form */
+#contactMe{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+#inputBox{
+    display: none;
+}
+
+input{
+    padding: 8px ;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#submitButton{
+    background-color: aquamarine;
+    padding: 10px 20px;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 400px) {
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #resumeLink{
+        margin-right: 5px;
+    }
+    #contactLink{
+        margin-left: 5px;
+    }
+    #firstSection img{
+        border-radius: 10px;
+        margin-top: 70px;
+        height: 200px;
+    }
+    #firstSection  a{
+        padding: 15px 15px;
+        border-radius: 30px;    
+    }
+    #infographic{
+        padding: 15px;
+    }
+    .infoDiv{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .honesty{
+        width: 80%;
+        margin: 0px;
+    }
+    .basicInfo{
+        padding-left: 0px;
+        font-size: small;
+        width: 80%;
+    }
+    .myTitles{
+        width: 50%;
+    }
+    .myDetails{
+        width: 50%;
+    }
+
+
+
+    /* education section */
+    .eduDiv{
+        display: unset;
+    }
+    .leftSide{
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .rightSide{
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+
+    /* skills section */
+    #skills{
+        padding: 40px;
+    }
+
+    .skillsDiv{
+        padding: 40px;
+        text-align: center;
+    }
+
+    /* contact me form */
+    #contactMe{
+        text-align: center;
+        width: 80%;
+    }
+
+    #inputBox{
+        display: none;
+    }
+
+}
